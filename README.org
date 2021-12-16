@@ -1,0 +1,38 @@
+* Introduction
+
+  The paradox of choose is omnipresent when training a neural network
+  and an evolution inspired algorithm was used to solve this problem.
+
+  This problem definition selected for this project is to mimic the
+  behaviour of fuzzy logic system using neural network.
+
+  Highlights of this project:
+   1. Hyper parameter optimisation using evolutionary algorithm
+   2. Build neural network from scratch via =numpy=
+   3. Dataset :: Collected raw sensory information from a robot (running
+      fuzzy logic system) as ground truth; presented in =data/data.csv=.
+
+* Reproducible result
+
+  This project is using a reproducible environment; using =Guix= and =Direnv=.
+  
+  #+begin_src shell
+# to load the environment.
+direnv allow
+
+# to train the model.
+python main.py
+  #+end_src
+
+
+ - Top 3 network proposed at the end of this process; for population 10,
+   generatoin 10.
+
+#+begin_example
+Top 3 networks
+[INFO] 1: Netowrk params {'no_neurons': 4, 'momentum_rate': 0.4, 'lambda_rate': 0.2, 'learning_rate': 0.1} and its loss 0.00963644542081991
+[INFO] 2: Netowrk params {'no_neurons': 8, 'momentum_rate': 0.2, 'lambda_rate': 0.2, 'learning_rate': 0.1} and its loss 0.009949271945111098
+[INFO] 3: Netowrk params {'no_neurons': 8, 'momentum_rate': 0.2, 'lambda_rate': 0.2, 'learning_rate': 0.1} and its loss 0.01023477941728593
+#+end_example
+
+[[file:artefact/graph-10p-10g.png][file:artefact/graph-10p-10g.png]]
