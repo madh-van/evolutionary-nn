@@ -3,7 +3,7 @@
   The paradox of choose is omnipresent when training a neural network
   and an evolution inspired algorithm was used to solve this problem.
 
-  This problem definition selected for this project is to mimic the
+  The problem definition selected for this project is to mimic the
   behaviour of fuzzy logic system using neural network.
 
   Highlights of this project:
